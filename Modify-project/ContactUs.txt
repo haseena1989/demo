@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+* {box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: center;
+}
+.header{
+  height:50%;
+  font-size: 20px;
+}
+
+h2{
+  color: rgb(52, 42, 141);
+  font-family: times roman;
+  text-align: center;
+  
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    box-shadow: 5px 5px 5px rgba(247, 236, 236, 0.1);
+
+  background-color: #f2f2f2;
+  
+}
+</style>
+</head>
+<body>
+  
+<div class="header">
+		<h2>Contact Us</h2>
+	<div class="container">
+  <form action="/action_page.php">
+  <label for="Query">Type of Query </label>
+    <select id="Query" name="Query">
+    <option value="select">Select</option>
+      <option value="Refund">refund</option>
+      <option value="Payment Failed">payment failed</option>
+      <option value="FeedBack">feedback</option>
+    </select>
+
+    <label for="name">Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter Your name..">
+
+    <label for="email">Email-Id</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your email..">
+     <label for="phoneNumber">Phone Number</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your phone no..">
+     
+     
+  <label for="yes_no_radio">Are you a member of Online Food Shop:</label>
+<p>
+<input type="radio" name="yes_no" checked>Yes</input>
+</p>
+<p>
+<input type="radio" name="yes_no">No</input>
+</p> 
+    <label for="subject">Ellaborate your query</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+  
+</div>
+
+</body>
+</html>

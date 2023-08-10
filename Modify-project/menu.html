@@ -1,0 +1,152 @@
+<html>
+<head>
+<title>Food website</title>
+<style>
+* {
+  box-sizing: border-box;
+  
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+ 
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  background-color:white;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+ 
+}
+
+</style>
+</head>
+<body>
+<h1>RECOMMENDED FOR YOU</h1>
+<div class="row">
+  <div class="column">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFb-QOETAw_2smnhPtCqsh8A1KTeBnpYEBTQ&usqp=CAU" alt="pic1" style="width:100%">  
+  <input type="checkbox" id="Pizza"  value="food">
+  <label for="pizza"> PIZZA</label><br>
+  <span>₹110</span>
+  <a href="#" id="buynow">Buy Now</a>
+  </div>
+  <div class="column">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFHbADpfjb7VzHUm-q5DkIups4UiYox8Hszw&usqp=CAU" alt="pic2" style="width:100%"> 
+  <input type="checkbox" id="Momos"  value="food">
+  <label for="momos"> MOMOS</label><br>
+  <span>₹80</span>
+  <a href="#" id="buynow">Buy Now</a>
+  </div>
+  <div class="column">
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbfM_yRVYIqwWEozKZbNtwTor5MTYJ29oIBw&usqp=CAU" alt="pic3" style="width:120%"> 
+   <input type="checkbox" id="Briyani"  value="food">
+  <label for="briyani"> BRIYANI</label><br>
+   <div> 
+   <span>₹100</span>
+   <a href="#" id="buynow">Buy Now</a>
+   </div>
+  </div>
+</div>
+
+<div id="buyNowModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Let's Celebrate</p> 
+    <form action="/action_page.php">
+    <label for="yname">Your Name:</label>
+    <input type="text" id="yname" name="yname"><br><br>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address"><br><br>
+    <label for="quantity">Quantity</label>
+    
+    <select name="quantity" id="quantity">
+    <option value="one">1</option>
+    <option value="two">2</option>
+    <option value="three">3</option>
+    </select><br><br>
+     
+     <input type="checkbox" id="statement" value="statement">
+     <label for="statement">Agree to terms and condition</label><br><br>
+    
+    <input type="submit" value="Place Order">
+   
+  </div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("buyNowModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("buynow");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
+
+
+
+
+

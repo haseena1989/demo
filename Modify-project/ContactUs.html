@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Food Shop</title>
+	<html>
+		<head>
+		<title>Online Food Delivery Shop</title>
+		<style>
+            
+            * {box-sizing: border-box;
+                
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: center;
+}
+.header{
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+     font-size: 20px;
+  font-family: Arial, sans-serif;
+  margin:auto;
+  justify-content: center;
+  align-items: center;
+  height: 125vh;
+  }
+
+h3{
+  color: rgb(9, 10, 97);
+  font-family: times roman;
+  text-align: center;
+  font-size: 30px;
+  margin: auto;
+
+  
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 10px 10px 10px rgba(247, 236, 236, 0.1);
+  background-color: #cbd1f3;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+  height: 128vh;
+  
+}
+
+		.header-section{
+		  height: 15vh;
+      width: 1341px;
+		  	  background:#f0ecec; 
+		}
+		
+		
+		h1{
+		  color: #f13232;
+		  font-family: courier new;
+		  		  text-align: center;
+				  margin:0;
+		  		}
+		h2{
+			color: #141010;
+		  font-family: courier new;
+				  text-align: center;
+				  font-weight: 5%;
+				  margin : 0;
+				 
+				}
+				
+				#navbar img{
+    display:block;
+    width: 70px;
+    height:70px;
+    margin:auto;
+    margin-bottom: 1px;
+}
+
+/*Navbar Functionality*/
+#navbar{
+      display:flex;
+      flex-direction: column;
+      margin-top:10px;
+      border: 2px solid #1a1717;
+		  border-radius: 25px;
+		  height: 125px;
+		  width:1340px;
+		  margin: 0%;
+		  background: #666060;
+	
+}
+
+/*Navbar content functionality*/
+#navcontent{
+  margin: 0%;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+/*Navbar content styling*/
+ul li{
+    list-style: none;
+    margin: 15px;
+    border-radius: 20px;
+}
+ul li a{
+    padding: 1px;
+    color:white;
+    text-decoration: none;
+    border-radius:10px;
+}
+ul li a:hover{
+    background-color: rgb(85, 51, 180);
+    border-radius: 10px;
+}
+
+		
+		.inner-container{
+		  border: 2px solid #1a1717;
+		  border-radius: 25px;
+		  height: 125px;
+		  width:1340px;
+		  margin: 0%;
+		  background: #666060;
+		  
+		  
+		}
+		
+		</style>
+		</head>
+		<body>
+		  <div class="header-section">
+				<h1>Online</h1>
+				<h2>Food Shop</h2>
+			</div>
+			
+				<nav id="navbar">
+					<img src="https://www.freepnglogos.com/uploads/food-png/food-grass-fed-beef-foodservice-products-grass-run-farms-4.png">
+					<ul id="navcontent">
+            <li><a href="C:\Users\Admin\OneDrive\Desktop\Home.html">Home</a></li>
+            <li><a href="#about">About </a></li>
+            <li><a href="c:\Users\Admin\OneDrive\Desktop\Vectum_Assignment_Card_files\menu.html">Menu </a></li>
+            <li><a href="C:\Users\Admin\OneDrive\Desktop\ContactUs.html">Contact us</a></li>
+					</ul>
+				</nav>
+						<div class="header">
+                            <h3>Contact Us</h3>
+                        <div class="container">
+                      <form action="/action_page.php">
+                      <label for="Query">Type of Query </label>
+                        <select id="Query" name="Query">
+                        <option value="select">Select</option>
+                          <option value="Refund">refund</option>
+                          <option value="Payment Failed">payment failed</option>
+                          <option value="FeedBack">feedback</option>
+                        </select>
+                    
+                        <label for="name">Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Enter Your name..">
+                    
+                        <label for="email">Email-Id</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Enter your email..">
+                         <label for="phoneNumber">Phone Number</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Enter your phone no..">
+                         
+                         
+                      <label for="yes_no_radio">Are you a member of Online Food Shop:</label>
+                    <p>
+                    <input type="radio" name="yes_no" checked>Yes</input>
+                    </p>
+                    <p>
+                    <input type="radio" name="yes_no">No</input>
+                    </p> 
+                        <label for="subject">Ellaborate your query</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    
+                        <input type="submit" value="Submit">
+                      </form>
+                      
+                      
+                    </div>
+                    
+                        </div>
+				</div>
+			</div>
+		</body>
+		</html>
